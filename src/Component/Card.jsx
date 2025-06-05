@@ -2,10 +2,12 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 export default function Card({ product }) {
+    console.log("Hello", product.images)
     return (
         <div className="card" style={{ width: "18rem" }}>
 
             <img src={product.images} className="card-img-top" alt="..." />
+
             <div className="card-body">
                 <div className=" d-flex justify-content-evenly">
                     <div className='d-flex justify-content-center'>
