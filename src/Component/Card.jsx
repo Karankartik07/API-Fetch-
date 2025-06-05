@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Card({ product }) {
     return (
@@ -26,7 +27,7 @@ export default function Card({ product }) {
 
 
                 <p className='bg-success text-light p-2 text-center '>Brand : {product.brand}</p>
-                <div className='d-flex justify-content-center'> <a href="#" className="btn btn-dark w-100 ">Buy Now</a></div>
+                <div className='d-flex justify-content-center'> <Link to={`/productinfo/${product.id}`} className="btn btn-dark w-100 ">Buy Now</Link></div>
             </div>
         </div>
     )
